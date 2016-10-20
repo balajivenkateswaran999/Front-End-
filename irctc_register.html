@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        #one,#two,#three{
+            width:400px;
+            height: 150px;
+            margin-left: auto;
+            margin-right: auto;
+            background: rgb(241,241,241);
+        }
+        .reg{
+            margin-bottom: 10px;
+            margin-left: 60px;
+            
+        }
+        label{
+            font-size: 13px;
+            font-family: Arial;
+            font-weight: bold;
+        }
+        #one > p,#two >p,#three >p{
+            
+            text-align: center;
+            background: aqua;
+            font-weight: bolder;
+        }
+        input{
+            display: block;
+            float:right;
+            position: relative;
+            right:40px;
+            border:1px solid #ccc;
+            height: 20px;
+        }
+        #two{
+            height: 270px; 
+        }
+        #three{
+            height: 270px;
+        }
+        button{
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            background:#27a7d4;
+            height: 40px;
+            color:white;
+            font-weight: 400px;
+            width:200px;
+            font-size:20px;
+        }
+        span{
+            color:red;
+        }
+        
+    </style>
+</head> 
+<body>
+    <div id="main">
+        <form name="register">
+        <div id="one">
+                <p>Registration Details</p>
+                <div class="reg">
+                    <label>UserID/Email</label><span>*</span>
+                    <input type="text" name="userid" placeholder="someone@gmail.com" required>
+                </div>
+                <div class="reg">
+                    <label>Password</label><span>*</span>
+                    <input type="text" name="pwd" value="" required>
+                </div>
+                <div class="reg">
+                    <label>Confirm Password</label><span>*</span>
+                    <input type="text" name="cnpwd" value="" required>
+                </div>
+                <div class="reg">
+                    <label>Security Question</label><span>*</span>
+                    <input list="questions" required>        
+                    <datalist id="questions">
+                        <option>What is your pet name</option>
+                        <option>What favourite past-time</option>
+                        <option>Who was your childhood hero</option>
+                        <option>What is your fathers middle name</option>
+                        <option>What is your favourite car</option>
+
+                    </datalist>
+                </div>
+        </div>
+        <div id="two">
+                <p>Personal Details</p>
+                <div class="reg">
+                    <label>FirstName</label><span>*</span>
+                    <input type="text" name="first"  required>
+                </div>
+                <div class="reg">
+                    <label>MiddleName</label><span>*</span>
+                    <input type="text" name="middle" value="" required>
+                </div>
+                <div class="reg">
+                    <label>LastName</label><span>*</span>
+                    <input type="text" name="last" value="" required>
+                </div>
+                <div class="reg">
+                    <label>Date of Birth</label>
+                    <input type="date" name="dob" value="">        
+                </div>
+                <div class="reg">
+                    <label>Email</label><span>*</span>
+                    <input type="email" name="email" value="" required>        
+                </div>
+                <div class="reg">
+                    <label>Mobile</label><span>*</span>
+                    <input type="tel" name="email" value="" required>        
+                </div>
+                <div class="reg">
+                    <label>Age</label>
+                    <input type="number" min="18" name="email" value="">        
+                </div>
+        </div>
+         <div id="three">
+                <p>Further Details</p>
+                <div class="reg">
+                    <label>Nationality</label>
+                     <input list="country">        
+                    <datalist id="country">
+                        <option>India</option>
+                        <option>Thailand</option>
+                        <option>Japan</option>
+                        <option>Russia</option>
+                        <option>England</option>
+
+                    </datalist>
+                </div>
+                <div class="reg">
+                    <label>HouseNumber</label>
+                    <input type="text" name="hno" value="" required>
+                </div>
+                <div class="reg">
+                    <label>Street</label>
+                    <input type="text" name="last" value="" required>
+                </div>
+                <div class="reg">
+                    <label>Area</label>
+                    <input type="text" name="last" value="" required>
+                </div>
+                <div class="reg">
+                    <label>State</label>
+                    <input list="state">        
+                    <datalist id="state">
+                        <option>AndhraPradesh</option>
+                        <option>Telangana</option>
+                        <option>Tamilnadu</option>
+                        <option>Gujarath</option>
+                        <option>Kerala</option>
+
+                    </datalist>
+                </div>
+                <div class="reg">
+                    <label>Pincode</label>
+                    <input type="number" name="email" value="">        
+                </div>
+                <div class="reg">
+                    <label>Agree terms and Conditions</label>
+                    <input type="checkbox" name="cbox" value="">        
+                </div>
+                
+                <button>SUBMIT</button>       
+        
+        </div>
+        </form>
+    </div>
+</body>
+</html>
